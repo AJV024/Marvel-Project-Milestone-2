@@ -1,0 +1,73 @@
+
+body {
+    background-color: darkred;
+    margin: 0;
+}
+
+
+.top-boxes {
+    display: flex;
+    /* I barely know what this flex does. I had help from my friend on creating this portion for the three boxes*/
+    justify-content: space-between;
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.top-box {
+    padding: 10px;
+    background-color: darkred;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+/* This code was used to create a box at the top. I needed 3. Each one was a link to one of the three pages */
+
+.top-box a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.top-box a:hover {
+    color: blue;
+}
+/* This was to establish which color to use, and the code before this was used for the font colors. This contrast was good for the user's vision */
+
+.content-box {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+
+.content-image {
+    width: 33%;
+    height: auto;
+    max-height: 300px;
+}
+/* This was needed to keep the images sized appropriately. Without this, the images were everywhere in dimensions */ 
+
+
+.content-header {
+    color: white;
+    text-align: center;
+    background-color: darkred;
+    padding: 15px;
+    margin-top: 60px; 
+}
+/* The header and text needed different padding and alginment */
+
+.content-text {
+    width: 60%;
+    text-align: justify;
+    color: white;
+    background-color: darkred;
+    padding: 15px;
+}
